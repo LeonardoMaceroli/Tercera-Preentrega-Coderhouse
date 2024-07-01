@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Piedra, Papel, Tijeras, Lagarto, Spock</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Piedra, Papel, Tijeras, Lagarto, Spock</h1>
+
+    <div class="inicio">
+        <img src="./IMG/reglas.webp" alt="reglas-de-juego">
+        <p class="parrafo">Esta es una version modificada del tradicional juego piedra, papel o tijeras creado por Sheldon Cooper en la
+            serie Big Bang Theory.
+            Se le agregan dos nuevas opciones: lagarto y Spock, las reglas son las siguientes.<br>
+            Las tijeras cortan el papel, el papel envuelve a la piedra, la piedra aplasta al lagarto, el lagarto
+            envenena a Spock,
+            Spock rompe la tijera, tijera decapita al lagarto, el lagarto come el papel, el papel desaprueba a Spock,
+            Spock vaporiza
+            la piedra y como siempre, la piedra rompe las tijeras.
+        </p><br>
+    </div>
+
+    <h2>Elige tu opción</h2>
+    <div class="container">
+        <img class="opcion" data-eleccion="0" src="./IMG/piedra.png" alt="Piedra">
+        <img class="opcion" data-eleccion="1" src="./IMG/papel.png" alt="Papel">
+        <img class="opcion" data-eleccion="2" src="./IMG/tijeras.png" alt="Tijeras">
+        <img class="opcion" data-eleccion="3" src="./IMG/lagarto.png" alt="Lagarto">
+        <img class="opcion" data-eleccion="4" src="./IMG/spock.png" alt="Spock">
+        <p id="resultado"></p>
+    </div>
+
+    <h3>Estadísticas</h3><br>
+    <div class="estadisticas">
+        <div class="estadistica">
+            <p id="partidasJugadas">Partidas jugadas: 0</p>
+        </div>
+        <div class="estadistica">
+            <p id="victorias">Victorias: 0</p>
+        </div>
+        <div class="estadistica">
+            <p id="derrotas">Derrotas: 0</p>
+        </div>
+        <div class="estadistica">
+            <p id="empates">Empates: 0</p>
+        </div>
+    </div><br>
+
+    <button id="reiniciar">Reiniciar estadisticas</button>
+
+    <footer>
+        <p>2024 © Leonardo Maceroli</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>
